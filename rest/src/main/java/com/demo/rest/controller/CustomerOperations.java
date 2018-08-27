@@ -26,7 +26,7 @@ public class CustomerOperations {
 	CustomerServiceImpl service/* = new CustomerServiceImpl()*/;
 	
 	@RequestMapping(value="/customer/add", method=RequestMethod.POST)
-	public Customer addCustomer(String customerName, long contactNumber, String emailId, String dateOfBirth,String url) {
+	public Customer addCustomer(String customerName, Long contactNumber, String emailId, String dateOfBirth,String url) {
 		Customer customer = new Customer(customerName, contactNumber, emailId, dateOfBirth,url);
 		return service.addCustomer(customer);
 	}

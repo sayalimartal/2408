@@ -13,7 +13,7 @@ public class Customer extends ResourceSupport{
 	@Id
 	private final int customerId;
 	private String customerName;
-	private long contactNumber;
+	private Long contactNumber;
 	private String emailId;
 	private String dateOfBirth;
 	private String url;
@@ -32,7 +32,7 @@ public class Customer extends ResourceSupport{
 		
 	}
 
-	public Customer(String customerName, long contactNumber, String emailId, String dateOfBirth,String url) {
+	public Customer(String customerName, Long contactNumber, String emailId, String dateOfBirth,String url) {
 		this.customerName = customerName;
 		this.contactNumber = contactNumber;
 		this.emailId = emailId;
